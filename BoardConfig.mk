@@ -61,7 +61,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 TARGET_BOARD_PLATFORM := default
-
+BOARD_HAS_NO_REAL_SDCARD := true
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -93,5 +93,7 @@ TW_H_OFFSET := -80
 TW_THEME := portrait_hdpi
 
 #TWRP misc
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
